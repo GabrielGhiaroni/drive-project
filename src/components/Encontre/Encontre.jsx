@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Encontre.module.css'
 import Card from '../Card/Card';
 
-import { Navigation, Pagination, Scrollbar, Ally } from 'swiper';
+import { Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';

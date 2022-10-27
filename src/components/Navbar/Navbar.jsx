@@ -16,10 +16,10 @@ const Navbar = () => {
                     <a href="#encontre" onClick={() => setNav(false)}>Saiba mais</a>
                 </li>
                 <li>
-                    <a href="#">Log in</a>
+                    <a>Log in</a>
                 </li>
                 <li>
-                    <a href="#">Cadastre-se</a>
+                    <a>Cadastre-se</a>
                 </li>
                 <li>
                     <AiOutlineSearch size={25} style={{marginTop: '6px'}}/>
