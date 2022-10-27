@@ -1,0 +1,66 @@
+.motorista {
+    max-width: 1040px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.motorista img {
+    max-width: 512px;
+}
+
+.motorista h2 {
+    /* padding-top: 30%; */
+    text-align: center;
+}
+
+.motorista span {
+    color: #593cfb;
+}
+
+.motorista p {
+    font-size: 1rem;
+    color: #333;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.motorista_btn {
+    background-color: #593cfb;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    padding: 12px 18px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.motorista_btn:hover {
+    background-color: #4733b7;
+    transition: background-color 1s;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+    .motorista {
+        grid-template-columns: 1fr;
+    }
+
+    .motorista img {
+        max-width: 80%;
+    }
+
+    .motorista .esquerda {
+        display: flex;
+        justify-content: center;
+    }
+}

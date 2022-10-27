@@ -1,0 +1,124 @@
+.hero {
+    background: url('https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80') no-repeat center/cover;
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 6px 15px;
+    background-color: rgba(247, 247, 247, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 24px;
+    border-radius: 25px;
+    gap: 2rem;
+}
+
+form label {
+    font-size: .8rem;
+    padding-bottom: 2px;
+}
+
+.texto,
+.checkin,
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.lupa_btn button {
+    display: none;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.texto_input {
+    font-size: 0.8rem;
+    width: 300px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.lupa_btn {
+    display: flex;
+    align-items: center;
+}
+
+.checkin,
+.checkout {
+    border-left: 1px solid #333;
+    padding-left: 12px;
+}
+
+.lupa_btn .btn {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto auto;
+        gap: 0;
+        padding: 1.2rem 1rem;
+    }
+
+    .texto,
+    .checkin,
+    .checkout {
+        width: 100%;
+        padding: .2rem;
+    }
+
+    .checkin,
+    .checkout {
+        border-left: none;
+    }
+
+    .border {
+        border-top: 1px solid #333;
+        padding: 8px;
+        padding-top: 1.2rem;
+    }
+
+    .lupa_btn {
+        width: 100%;
+        border-top: 1px solid #333;
+        padding: 1rem 0;
+    }
+
+    .lupa_btn .btn {
+        display: block;
+        background-color: #593cfb;
+        color: #fff;
+        width: 100%;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        padding: 12px 18px;
+        margin: 0.5rem 0;
+        cursor: pointer;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .lupa_btn .btn:hover {
+        background-color: #4733b7;
+        transition: background-color 1s;
+    }
+
+}
